@@ -8,7 +8,7 @@ var methodOverride = require('method-override'); // simulate DELETE and PUT (exp
 var cors = require('cors');
 
 // Configuration
-mongoose.connect('mongodb://localhost/reviewking');
+mongoose.connect('mongodb://reviewking_db:reviewking_password@138.197.53.99:27017/reviewking');
 
 app.use(morgan('dev'));                                         // log every request to the console
 app.use(bodyParser.urlencoded({'extended':'true'}));            // parse application/x-www-form-urlencoded
